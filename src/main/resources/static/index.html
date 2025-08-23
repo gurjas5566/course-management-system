@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Smart Course Management System</h1>
+      <h2>Admin Dashboard</h2>
+    </header>
+
+    <main>
+      <section id="add-course">
+        <h3>Add New Course</h3>
+        <form id="course-form">
+          <label for="courseName">Course Name:</label>
+          <input type="text" id="courseName" name="courseName" required />
+
+          <label for="courseCode">Course Code:</label>
+          <input type="text" id="courseCode" name="courseCode" required />
+
+          <label for="courseDescription">Description:</label>
+          <textarea id="courseDescription" name="courseDescription"></textarea>
+
+          <button type="submit">Add Course</button>
+        </form>
+      </section>
+
+      <section id="course-list">
+        <h3>Available Courses</h3>
+        <table id="courses-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Code</th>
+              <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

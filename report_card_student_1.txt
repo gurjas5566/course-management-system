@@ -1,0 +1,11 @@
+------------------------------------
+          STUDENT REPORT CARD       
+------------------------------------
+Student Name: Alex Johnson
+Student ID: 1
+Email: alex.johnson@example.com
+------------------------------------
+Enrolled Courses:
+------------------------------------
+- Introduction to Programming (CS101)
+------------------------------------
