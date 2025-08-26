@@ -16,7 +16,7 @@ public class LoggerService {
             
             String logEntry = String.format("[%s] %s", new Date(), message);
             printWriter.println(logEntry);
-            System.out.println("LOGGED: " + logEntry); // Also print to console for visibility
+            System.out.println("LOGGED: " + logEntry); 
             
         } catch (IOException e) {
             System.err.println("Error writing to log file: " + e.getMessage());
