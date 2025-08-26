@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Define STUDENT_ID here so it's in the correct scope
+  
   const STUDENT_ID = 5;
   const BASE_URL = "http://localhost:8081";
 
@@ -34,7 +34,7 @@ async function fetchAvailableCourses(BASE_URL) {
 }
 
 async function enrollInCourse(courseId, BASE_URL) {
-  // STUDENT_ID is no longer defined in this function
+ 
   try {
     const response = await fetch(
       `${BASE_URL}/api/enrollments/enroll?courseId=${courseId}`,
@@ -50,7 +50,7 @@ async function enrollInCourse(courseId, BASE_URL) {
     if (response.ok) {
       console.log("Enrollment successful!");
       alert("You have successfully enrolled in the course!");
-      const STUDENT_ID = 5; // Re-declare it for this specific function scope
+      const STUDENT_ID = 5; 
       fetchEnrolledCourses(STUDENT_ID, BASE_URL);
     } else {
       console.error("Enrollment failed.");
@@ -106,7 +106,7 @@ async function dropCourse(enrollmentId, BASE_URL) {
     if (response.ok) {
       console.log("Course dropped successfully!");
       alert("Course dropped successfully!");
-      const STUDENT_ID = 5; // Re-declare it for this specific function scope
+      const STUDENT_ID = 5; 
       fetchEnrolledCourses(STUDENT_ID, BASE_URL); // Refresh the list
     } else {
       console.error("Failed to drop course.");
